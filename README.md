@@ -1,8 +1,7 @@
-# React + Vite
+# TDD React Todo List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+🚀 This repository serves as a test ground for exploring Test-Driven Development (TDD) principles. It focuses on applying TDD methodologies to React projects, showcasing my ability to write clean, maintainable, and well-tested code. Through this project, I aim to demonstrate my proficiency in both TDD and React, highlighting my commitment to quality software development practices.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📚 Additionally, this repository can be a valuable resource for anyone looking to learn TDD and React. By examining the code and following along with the examples, learners can gain practical insights into how to implement TDD in their own React projects. Happy coding! 🎉
