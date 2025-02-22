@@ -1,35 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+/* eslint-disable react/prop-types */
 
-function App() {
-  const [count, setCount] = useState(0)
-
+function App({ todos = [] }) {
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <h1>TDD React Todo</h1>
+      <div data-testid="todo-container">
+        <div data-testid="add-todo-container">
+          <button data-testid="add-todo-btn">Add Todo</button>
+        </div>
+        <div data-testid="todo-list">
+          {todos.length === 0 && <p>No todos</p>}
+          {todos.map((todo) => (
+            <div key={todo.name}>
+              <h2>{todo.name}</h2>
+            </div>
+          ))}
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
